@@ -8,6 +8,6 @@ Para evolucionar la aplicación a un patrón de tipo microservicios, se podría 
 
 ### Ejercicio 2. En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?
 
-La aplicación además de usar el lenguaje PHP, usa el lenguaje Javascript, en el lado del cliente, dotando de dinamismo a la aplicación. El uso de más lenguajes está limitado al tratarse del Framework Symfony, sin embargo con una arquitectura de microservicios, el lenguaje en el que estuvieran desarrollados estos, no importaría.
+La aplicación además de usar el lenguaje PHP, usa el lenguaje Javascript en el lado del cliente, dotando de dinamismo a la aplicación. El uso de más lenguajes está limitado al tratarse del Framework Symfony, sin embargo con una arquitectura de microservicios, el lenguaje en el que estuvieran desarrollados estos, no importaría.
 
 El almacen de datos utilizado fue MySQL. Sin embargo cabería la posiblidad de que evolucionara hacía un almacen noSQL, como MongoDB, ya que que la estructura y cantidad de datos que maneja la aplicación es diversa.
