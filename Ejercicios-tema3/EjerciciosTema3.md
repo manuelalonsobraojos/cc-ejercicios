@@ -11,11 +11,11 @@ Una vez en la página accederemos al formulario de registro y lo rellenaremos co
 Una vez rellenado el formulario haremos clic en el botón de crear cuenta y nos pedirá que accedamos al correo electrónico para confirmar el registro.
 Una vez hemos accedido al correo, accederemos al enlace de confirmación y nos pedirá que ingresemos una contraseña. Una vez aceptada la contrasela nos dará la bienvenida al servicio Heroku.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura1.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura1.png)
 
 Una vez acabado el proceso de registro ya podremos utilizar el servicio Heroku.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura3.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura3.png)
 
 
 ### Ejercicio 2:
@@ -23,19 +23,19 @@ Una vez acabado el proceso de registro ya podremos utilizar el servicio Heroku.
 Accederemos a [OpenShift](https://www.openshift.com) y nos daremos de alta logueandonos con nuestra cuenta de github. Deberemos autorizar que OpenShift acceda a los datos de nuestra cuenta de github.
 Una vez hemos accedido crearemos una nueva aplicación, en nuestro caso crearemos una app en python con Django seleccionandolo del catálogo que nos ofrece.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura4.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura4.png)
 
 Una vez seleccionado deberemos de introducir el nombre de la app y un repositorio de github.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura5.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura5.png)
 
 Una vez introducido nuestra app se construira y se desplegará automáticamente
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura6.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura6.png)
 
 En la siguiente imagen podemos ver como la app está funcionando.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura7.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura7.png)
 
 
 ### Ejercicio 3:
@@ -124,7 +124,7 @@ Con este archivo hacemos dos comprobaciones, la primera comprueba que se carga l
 
 Para desplegarlo en Heroku crearemos un proyecto y lo sincronizaremos con el repositorio de github donde se encuentre la aplicación, una vez lo tengamos sincronizado habilitaremos la opción de despliegue automático con la que cada vez que hagamos un push a nuestro repositorio de github, automáticamente se desplegará en Heroku.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura8.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura8.png)
 
 
 ### Ejercicio 7:
@@ -132,7 +132,7 @@ Para desplegarlo en Heroku crearemos un proyecto y lo sincronizaremos con el rep
 
 En el ejercicio anterior ya hemos visto como configurar el despliegue automático, asi que para este ejercicio lo unico que nos queda es configurar que espere a que la aplicación pase primero los test con travis.ci. Para ello debemos marcar la casilla que vemos en la siguiente imagen.
 
-![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura9.PNG)
+![img](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema3/capturas/Captura9.png)
 
 
 ### Ejercicio 8:
