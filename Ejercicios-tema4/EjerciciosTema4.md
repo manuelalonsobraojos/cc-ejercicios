@@ -43,16 +43,16 @@ app.listen(app.get('port'),
 	
 ```	
 Una vez tenemos lista nuestra aplicación, la ejecutamos con con el comando ```node app.js```.
-![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio1-1.PNG)
 
 Una vez tenemos la aplicación ejecutando, accedemos al navegador y podemos realizar dos peticiones de tipo **GET**, para ellos escribiremos en la barra de navegación las siguientes direciones:
 * **http://localhost:5000/ejercicio**.
 * **http://localhost:5000/ejercicio/manuel**
 
 Para cada una de las peticiones anterior la aplicación devuelve los siguientes resultados:
-![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio1-2.PNG)
 
-![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio1-3.PNG)
 
 
 ### Ejercicio 2
@@ -134,10 +134,10 @@ if __name__ == '__main__':
 
 Para la creación de ese microservicio he utilizado el microframework de python **flask**. 
 Para ejecutarlo se usará el comando ```python app.py```, tal y como podemos ver en la siguiente imagen:
-![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio2-1.PNG)
 
 Una vez está ejecutando el microservicio, accedemos al navegador y escribimos en la barra de navegación la dirección **http://localhost:5000/resultall**, la cual nos devolverá en formato json una lista con todos los resultados de la jornada.
-![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio2-2.PNG)
 
 ### Ejercicio 3
 **Crear pruebas para las diferentes rutas de la aplicación.**
@@ -225,7 +225,7 @@ if __name__ == '__main__':
 ```   
 
 Para su ejecución deberemos de ejcutar el comando ```python test_app.py```, tal y como podemos ver en la siguiente imgen:
- ![]()
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio3.PNG)
 
 ### Ejercicio 5
 **Usar rake, invoke o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes.**
@@ -243,3 +243,13 @@ ejecutar:
 	cd bot && python app.py
 ```
 
+Podemos ejecutar cada una de las ordenes que se detallan en el código, con los siguientes comandos:
+
+* **make install**
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio5.PNG)
+
+* **make test**
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjeercicio5-2.PNG)
+
+* **make ejecutar**
+![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio5-3.PNG)
