@@ -3,8 +3,8 @@
 ### Ejercicio 1:
 **Realizar una aplicación básica que use express para devolver alguna estructura de datos del modelo que se viene usando en el curso.**
 
-Se ha creado la app con el comando ```express ejercicio3```. Las dependencias se instalarán ccon el comando ```npm install```. 
-El siguiente código corresponde con la aplicación:
+Se ha creado la app con el comando ```express ejercicio```. Las dependencias se instalarán ccon el comando ```npm install```. 
+El siguiente código el cual podemos encontrar en el siguiente [enlace](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/app_express/ejercicio/app.js), corresponde con la aplicación:
 ```
 var createError = require('http-errors');
 var express = require('express');
@@ -20,10 +20,10 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-app.put('/ejercicio3/:nombre/:dificultad',
+app.put('/ejercicio3/:nombre',
 	function (req, response){
 	
-		var mensaje = req.params.nombre + " Ejercicio 3 asignatura CC " + req.params.dificultad;
+		var mensaje = req.params.nombre + " Ha realizado el Ejercicio 1 asignatura CC ";
 
 		response.send(mensaje);
 
@@ -31,7 +31,7 @@ app.put('/ejercicio3/:nombre/:dificultad',
 
 app.get('/ejercicio',
 	function(request,response){
-		response.send("Este página corresponde al ejercicio 3 de la asignatura Cloud Computing");
+		response.send("Este página corresponde al ejercicio 1 de la asignatura Cloud Computing");
 	});
 
 
@@ -42,11 +42,23 @@ app.listen(app.get('port'),
 	});
 	
 ```	
+Una vez tenemos lista nuestra aplicación, la ejecutamos con con el comando ```node app.js```.
+![]()
+
+Una vez tenemos la aplicación ejecutando, accedemos al navegador y podemos realizar dos peticiones de tipo **GET**, para ellos escribiremos en la barra de navegación las siguientes direciones:
+* **http://localhost:5000/ejercicio**.
+* **http://localhost:5000/ejercicio/manuel**
+
+Para cada una de las peticiones anterior la aplicación devuelve los siguientes resultados:
+![]()
+
+![]()
+
 
 ### Ejercicio 2
 **Programar un microservicio en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.**
 
-Para la realización de este ejercicio he creado un microservicio en el lenguaje python. Esta aplicación devuelve resultados de la jonada de la liga Española de fútbol.
+Para la realización de este ejercicio he creado un microservicio en el lenguaje python. Esta aplicación devuelve resultados de la jonada de la liga Española de fútbol. [Código](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/microservicio_python/bot/app.py)
 
 ```
 from flask import Flask
@@ -120,12 +132,17 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```	
 
-Para la creación de ese microservicio he utilizado el microframework de python **flask**.
+Para la creación de ese microservicio he utilizado el microframework de python **flask**. 
+Para ejecutarlo se usará el comando ```python app.py```, tal y como podemos ver en la siguiente imagen:
+![]()
+
+Una vez está ejecutando el microservicio, accedemos al navegador y escribimos en la barra de navegación la dirección **http://localhost:5000/resultall**, la cual nos devolverá en formato json una lista con todos los resultados de la jornada.
+![]()
 
 ### Ejercicio 3
 **Crear pruebas para las diferentes rutas de la aplicación.**
 
-En el siguiente código podemos ver los test realizados para las distintas rutas del microservicio:
+En el siguiente [código](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/microservicio_python/bot/test/test_app.py) podemos ver los test realizados para las distintas rutas del microservicio:
 
 ```
 import unittest
@@ -205,12 +222,15 @@ class ResultTest(unittest.TestCase):
 
 if __name__ == '__main__':
    unittest.main()
-```    
+```   
+
+Para su ejecución deberemos de ejcutar el comando ```python test_app.py```, tal y como podemos ver en la siguiente imgen:
+ ![]()
 
 ### Ejercicio 5
 **Usar rake, invoke o la herramienta equivalente en tu lenguaje de programación para programar diferentes tareas que se puedan lanzar fácilmente desde la línea de órdenes.**
 
-La herramienta equivalente es **Makefile** el cual podemos ver a continuación:
+La herramienta equivalente es **Makefile** el cual podemos ver a continuación y encontrar en el siguiente [enlace](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/microservicio_python/Makefile):
 
 ```
 install:
