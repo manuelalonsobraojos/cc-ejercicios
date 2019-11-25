@@ -246,10 +246,13 @@ ejecutar:
 Podemos ejecutar cada una de las ordenes que se detallan en el código, con los siguientes comandos:
 
 * **make install**
+
 ![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio5.PNG)
 
 * **make test**
+
 ![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjeercicio5-2.PNG)
 
 * **make ejecutar**
+
 ![](https://github.com/manuelalonsobraojos/cc-ejercicios/blob/master/Ejercicios-tema4/imagenes/CapturaEjercicio5-3.PNG)
